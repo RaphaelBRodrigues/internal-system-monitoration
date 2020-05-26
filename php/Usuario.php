@@ -368,7 +368,6 @@ echo                $query = "UPDATE Lojista SET  lj_razaoSocial = '" . $razao .
             $mail->SMTPSecure = 'tls';
             $mail->SMTPDebug = 1;
             $mail->CharSet = 'UTF-8';
-
             $mail->setFrom('mixpetplataforma@gmail.com', 'MixPet');
             $mail->addAddress($email, $nome);
 
