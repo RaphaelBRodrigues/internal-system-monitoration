@@ -1,0 +1,12 @@
+#!/bin/bash
+
+usuario=$USER;
+
+#echo $usuario;
+#update-rc.d nome-do-script defaults
+#update-rc.d nome-do-script remove
+
+
+apt moo
+sh /home/$USER/Variados/SMI/shell/dados
+php /home/$USER/Variados/SMI/php/exec.php

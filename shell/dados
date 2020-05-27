@@ -1,0 +1,14 @@
+#!/bin/bash
+
+hostnamectl > /home/$USER/Variados/SMI/log/notebook.txt
+ip addr > /home/$USER/Variados/SMI/log/ip.txt
+date +%d/%m/%y > /home/$USER/Variados/SMI/log/data.txt
+date +%H:%M > /home/$USER/Variados/SMI/log/hora.txt
+
+date +%d/%m/%y >> /home/$USER/Variados/SMI/log/log.txt
+date +%H:%M >> /home/$USER/Variados/SMI/log/log.txt
+
+hostname >> /home/$USER/Variados/SMI/log/usuario.txt
+echo $USER >> /home/$USER/Variados/SMI/log/usuario.txt
+echo ======================= >> /home/$USER/Variados/SMI/log/log.txt
+

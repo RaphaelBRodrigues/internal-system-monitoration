@@ -2,7 +2,7 @@
 
 class Templates{
     function Acesso(){
-       $template = file_get_contents("../php/templates/acesso.html");
+       $template = file_get_contents(dirname(__FILE__)."/html/acesso.phtml");
         return $template;
     }
 

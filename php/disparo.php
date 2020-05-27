@@ -6,17 +6,17 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 
-    require "../vendor/autoload.php";
+    require dirname(__FILE__)."/../vendor/autoload.php";
     require "templates/templates.php";
     require 'config.php';
 
-    class Disparo extends config{
+     class Disparo extends config{
 
         private $template;
         private $mail;
         function __construct()
         {
-
+             
             $this->template = new Templates();
             $this->mail = new PHPMailer(true);
             $this->mail->isSMTP();
@@ -42,9 +42,14 @@ use PHPMailer\PHPMailer\Exception;
 
                 $this->mail->Subject = 'Acesso recente no notebook';
                 $this->mail->Body = $this->template->Acesso();
-    
                 $this->mail->send();
 
+        }
+
+        
+
+        static function teste(){
+            echo "Teste estático";
         }
     }
 
