@@ -1,3 +1,58 @@
-<body>
-    <h1>Teste</h1>
+<?php require '/home/raphael/Variados/SMI/php/templates/controller.php';?>
+<body
+    style="color:white;background-color:rgba(0,0,0,0.6);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <center>
+        <header>
+            <h1 style="background-color:black;padding: 1em 0 1em;">Relatório do acesso</h1>
+        </header>
+    </center>
+    <div style="margin:2em 0 2em 0;flex:1;display: flex;justify-content: space-around;">
+    <section>
+        <h2>Descrição do dispositivo</h2>
+                <table style="text-align: left;font-size: 1.5em;">
+                    <tr>
+                        <th>Hostname:</th>
+                        <td><?php echo Controller::getHostname(); ?></td>
+                    </tr>
+                    <tr>
+                        <th>Tipo:</th>
+                        <td><?php echo Controller::getTipo(); ?></td>
+                    </tr>
+                    <tr>
+                        <th>OS:</th>
+                        <td><?php echo Controller::getOS(); ?></td>
+                    </tr>
+                </table>
+
+       
+    </section>
+    <section>
+        <h2>Descrição do acesso</h2>
+        <table style="text-align: left;font-size: 1.5em;">
+            <tr>
+                <th>Data:</th>
+                <td>27/05/20</td>
+            </tr>
+            <tr>
+                <th>Hora:</th>
+                <td>19:18:00</td>
+            </tr>
+           
+            <tr>
+                <th>IP:</th>
+                <td>186.228.167.37</td>
+            </tr>
+        </table>
+       
+    </section>
+
+</div>
+
+    <center>
+        <footer style="background-color:black; padding:0.01em 0 0.01em 0;">
+            <h3> <a style="color:white;" target="_blank" href="https://raphaelbrodrigues.github.io"> ©
+                    RaphaelBRodrigues </a></h3>
+        </footer>
+    </center>
+
 </body>

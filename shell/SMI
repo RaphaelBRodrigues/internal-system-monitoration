@@ -1,5 +1,5 @@
 #!/bin/bash
-
+  
 usuario=$USER;
 
 #echo $usuario;
@@ -8,5 +8,7 @@ usuario=$USER;
 
 
 apt moo
-sh /home/$USER/Variados/SMI/shell/dados
-php /home/$USER/Variados/SMI/php/exec.php
+sh /home/raphael/Variados/SMI/shell/dados
+sleep 40
+php /home/raphael/Variados/SMI/php/exec.php
+~                                             

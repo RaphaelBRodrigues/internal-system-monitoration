@@ -7,6 +7,7 @@ date +%H:%M > /home/$USER/Variados/SMI/log/hora.txt
 
 date +%d/%m/%y >> /home/$USER/Variados/SMI/log/log.txt
 date +%H:%M >> /home/$USER/Variados/SMI/log/log.txt
+curl ifconfig.me >> /home/$USER/Variados/SMI/log/ip.txt
 
 hostname >> /home/$USER/Variados/SMI/log/usuario.txt
 echo $USER >> /home/$USER/Variados/SMI/log/usuario.txt

@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
     require dirname(__FILE__)."/../vendor/autoload.php";
-    require "templates/templates.php";
+    require "templates/export.php";
     require 'config.php';
 
      class Disparo extends config{
