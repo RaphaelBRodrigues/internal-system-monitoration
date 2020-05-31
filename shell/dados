@@ -12,7 +12,7 @@ echo $hostname
 $host > /home/$USER/Variados/SMI/log/computador.txt;
 #echo $hostname, > /home/$USER/Variados/SMI/log/acesso.txt;
 cat /etc/hostname > /home/$USER/Variados/SMI/log/acesso.txt;
-echo , 
+echo ,  >> /home/$USER/Variados/SMI/log/acesso.txt;log;
 echo $user, >> /home/$USER/Variados/SMI/log/acesso.txt;
 echo $data, >> /home/$USER/Variados/SMI/log/acesso.txt;
 echo $hora, >> /home/$USER/Variados/SMI/log/acesso.txt;
