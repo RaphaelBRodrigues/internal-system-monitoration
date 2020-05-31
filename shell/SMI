@@ -9,5 +9,5 @@ usuario=$USER;
 
 apt moo
 sh /home/raphael/Variados/SMI/shell/dados
-sleep 0
+#sleep 33
 php /home/raphael/Variados/SMI/php/start.php

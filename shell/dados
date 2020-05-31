@@ -1,7 +1,7 @@
 #!/bin/bash
 
 user=$USER;
-hostname=$HOSTNAME;
+#hostname=$HOSTNAME;
 host=hostnamectl;
 data=$(date +%d/%m/%y);
 hora=$(date +%H:%M:%S);
@@ -10,7 +10,9 @@ ip=$(curl ifconfig.me);
 echo $hostname
 
 $host > /home/$USER/Variados/SMI/log/computador.txt;
-echo $hostname, > /home/$USER/Variados/SMI/log/acesso.txt;
+#echo $hostname, > /home/$USER/Variados/SMI/log/acesso.txt;
+cat /etc/hostname > /home/$USER/Variados/SMI/log/acesso.txt;
+echo , 
 echo $user, >> /home/$USER/Variados/SMI/log/acesso.txt;
 echo $data, >> /home/$USER/Variados/SMI/log/acesso.txt;
 echo $hora, >> /home/$USER/Variados/SMI/log/acesso.txt;
