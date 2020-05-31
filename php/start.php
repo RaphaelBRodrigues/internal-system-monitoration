@@ -1,4 +1,5 @@
 <?php
+    /* Inicializa o sistema */
 
     require 'disparo.php';
 

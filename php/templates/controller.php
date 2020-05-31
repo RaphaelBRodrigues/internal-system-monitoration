@@ -1,18 +1,17 @@
 <?php
 
-class Controller{
+require '/home/raphael/Variados/SMI/php/dados.php';
+class Controller extends Dados
+{
 
-    static function gethostname(){
-        $hostname = "raphael";
-        return $hostname;
+    public function vendor(){
+        $vendor = array(
+            "repo" => "https://github.com/RaphaelBRodrigues/SMI",
+            "link" => "https://raphaelbrodrigues.github.io",
+            "autor" => "RaphaelBRodrigues"
+        );
+        return $vendor;
     }
-    static function getTipo(){
-        $hostname = "laptop";
-        return $hostname;
-    }
-    static function getOS(){
-        $hostname = "Ubuntu18.04.4LTS";
-        return $hostname;
-    }
-    
+  
 }
+

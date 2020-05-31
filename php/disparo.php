@@ -5,10 +5,10 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+/* Dispara os emails */
 
     require dirname(__FILE__)."/../vendor/autoload.php";
     require "templates/export.php";
-    require 'config.php';
 
      class Disparo extends config{
 
@@ -48,9 +48,7 @@ use PHPMailer\PHPMailer\Exception;
 
         
 
-        static function teste(){
-            echo "Teste estático";
-        }
+     
     }
 
 ?>
