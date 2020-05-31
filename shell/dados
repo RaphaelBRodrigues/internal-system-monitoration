@@ -1,15 +1,24 @@
 #!/bin/bash
 
-hostnamectl > /home/$USER/Variados/SMI/log/notebook.txt
-ip addr > /home/$USER/Variados/SMI/log/ip.txt
-date +%d/%m/%y > /home/$USER/Variados/SMI/log/data.txt
-date +%H:%M > /home/$USER/Variados/SMI/log/hora.txt
+user=$USER;
+hostname=$HOSTNAME;
+host=hostnamectl;
+data=$(date +%d/%m/%y);
+hora=$(date +%H:%M:%S);
+ip=$(curl ifconfig.me);
 
-date +%d/%m/%y >> /home/$USER/Variados/SMI/log/log.txt
-date +%H:%M >> /home/$USER/Variados/SMI/log/log.txt
-curl ifconfig.me >> /home/$USER/Variados/SMI/log/ip.txt
+echo $hostname
 
-hostname >> /home/$USER/Variados/SMI/log/usuario.txt
-echo $USER >> /home/$USER/Variados/SMI/log/usuario.txt
-echo ======================= >> /home/$USER/Variados/SMI/log/log.txt
+$host > /home/$USER/Variados/SMI/log/computador.txt;
+echo $hostname, > /home/$USER/Variados/SMI/log/acesso.txt;
+echo $user, >> /home/$USER/Variados/SMI/log/acesso.txt;
+echo $data, >> /home/$USER/Variados/SMI/log/acesso.txt;
+echo $hora, >> /home/$USER/Variados/SMI/log/acesso.txt;
+echo $ip, >> /home/$USER/Variados/SMI/log/acesso.txt;
+
+
+echo $data >> /home/$USER/Variados/SMI/log/log.txt;
+echo $hora >> /home/$USER/Variados/SMI/log/log.txt;
+
+echo ======================= >> /home/$USER/Variados/SMI/log/log.txt;
 
